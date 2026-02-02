@@ -35,7 +35,7 @@ frontend:
         path: /
         port: 8080
   
-  titleImage: "https://raw.githubusercontent.com/Am1its/todolist-k8s/main/myimage.png"
+  titleImage: "https://raw.githubusercontent.com/Am1its/todolist-k8s/main/assets/my-icon.png"
 
 backend:
   name: todos-api
