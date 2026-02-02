@@ -1,0 +1,23 @@
+{{- if .Values.database.networkPolicy.enabled -}}
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: {{ .Release.Name }}-protect-db
+spec:
+  podSelector:
+    matchLabels:
+      app: {{ .Values.database.name }}
+  policyTypes:
+  - Ingress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: {{ .Values.backend.name }}
+    - podSelector:
+        matchLabels:
+          app: {{ .Values.frontend.name }}
+    ports:
+    - protocol: TCP
+      port: 3306
+{{- end }}

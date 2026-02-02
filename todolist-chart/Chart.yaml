@@ -1,0 +1,9 @@
+apiVersion: v2
+name: todolist
+description: A Helm chart for TodoList (Frontend + MariaDB Backend)
+type: application
+version: 0.1.0
+appVersion: "1.9"
+maintainers:
+  - name: Amit-Oved
+    email: amitov2@mta.ac.il
