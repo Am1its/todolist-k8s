@@ -1,9 +1,8 @@
 .DS_Store
+*.tgz
 *.txt
-*.yaml
-!todolist-chart/
 base/
 overlays/
-# כאן אנחנו מוודאים שהתמונה שלך עולה
-!my-icon.png
-!myimage.png
+pbcopy.txt
+t.txt
+metallb-config.yaml
