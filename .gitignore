@@ -1,0 +1,9 @@
+.DS_Store
+*.txt
+*.yaml
+!todolist-chart/
+base/
+overlays/
+# כאן אנחנו מוודאים שהתמונה שלך עולה
+!my-icon.png
+!myimage.png
