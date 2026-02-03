@@ -41,7 +41,6 @@ The system is composed of three main microservices:
 You can install the chart directly from the GitHub Container Registry:
 
 ```bash
-Bash
 helm install my-todo oci://ghcr.io/am1its/todolist-k8s/todolist \
   --version 0.1.0 \
   --set database.rootPassword=secret123
