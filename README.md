@@ -55,10 +55,10 @@ To access the app locally, run the following commands:
 
 ```bash
 # 1. Expose the API (Backend)
-kubectl port-forward svc/todos-api-svc 8081:8080 &
+kubectl port-forward svc/todos-api-svc 8081:8080 
 
 # 2. Expose the UI (Frontend)
-kubectl port-forward svc/todolist-frontend 8000:80 &
+kubectl port-forward svc/todolist-frontend 8000:80 
 👉 Open in Browser: http://localhost:8000
 ```
 
